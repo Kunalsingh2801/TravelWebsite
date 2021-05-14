@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+/* ######################## Utility Element ######################## */
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* ####################### utitlity classes ###################### */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+}
+.lg-heading{
+    font-size: 3.2rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333333;
+}
+.text-grey{
+    color: #555555;
+}
+.bg-dark{
+    background-color: #263238;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    background-color: white;
+    border-radius: 10em;
+}
+.btn-secondary{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background-color: white;
+}
+.btn-secondary:hover,
+.btn-primary:hover{
+    background-color: rgb(246, 246, 144);
+}
+
+/* ######################### Header Styling ########################## */
+
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/jake-blucker-tMzCrBkM99Y-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    padding: 1rem;
+}
+
+.navbar .logo{
+    float: left;
+}
+
+.navbar .navitems{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar .navitem{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*#################### Header Content Styling ###################### */
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content p{
+    text-transform: uppercase;
+}
+/*######################## Section 1 Styling ######################## */
+.showcase{
+    background-color: #dddddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.315);
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box,
+.row2 .text-box{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.row2 .img-box,
+.row1 .text-box{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.text-box{
+    padding: 3rem;
+}
+.row .img-box img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ###################### Features Section styling ################## */
+
+.features{
+    padding: 10rem;
+}
+.box{
+    width: 33.3333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+.box-wrapper{
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.box1, .box3{
+    background-color: #263238;
+    color: #ffffff;
+}
+.box2{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: #ffffff;
+}
+
+/* ########################### Footer Styling ##################### */
+
+.footer{
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.icons i{
+    margin: 2rem;
+}
+
+/* ######################## About Page Styling ############### */
+
+.about{
+    padding: 5rem 0;
+}
+.about-section::after{
+    content: '';
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+}
+
+/* ########################## parent div styling #################### */
+
+.parent-div{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.parent-div .left-div{
+    float: left;
+    width: 50%;
+}
+.parent-div .right-div{
+    float: right;
+    width: 50%;
+}
+.parent-div::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.parent-div div li::before{
+    content: '\2713';
+    font-weight: bold;
+    color: #e63946;
+    padding-right: 1rem;
+}
+
+/* ######################## Services section styling ################# */
+
+.services{
+    text-align: center;
+    margin-top: 3rem;
+}
+.services .things{
+    float: left;
+    width: 25%;
+}
+.services::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.things span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+.things p{
+    font-weight: 700;
+    color: #333333;
+    font-size: 1.8rem;
+}
+
+/* ####################### Banner styling #################### */
+
+.banner{
+    margin-top: 3rem;
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: #ffffff;
+    box-shadow: 5px 5px 10px #000000;
+}
+.banner-left{
+    float: left;
+    width: 60%;
+}
+.banner-right{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+.banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.banner-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.6rem;
+    padding-left: 1rem;
+}
+.banner-link{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: 3px solid #ffffff;
+    padding: 0.3em 2.4em;
+    letter-spacing: 0.5rem;
+    color: white;
+    margin: 0.3em 0.3em;
+}
+.banner-link:hover{
+    background: linear-gradient(253deg, rgba(34,193,195,1) 0%, rgba(253,45,67,1) 100%);
+}
+
+/* ################### contact page styling #################### */
+
+.contact-form{
+    padding: 5rem 0;
+    background: #f7f7f7;
+}
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.form-wrapper .company-address{
+    height: 760px;
+    background: #ffffff;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+.company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: center;
+}
+.company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.company-address .address-group{
+    margin-bottom: 3rem;
+}
+/* ##################### form styling ################ */
+.form-wrapper .form{
+    height: 760px;
+    font-size: 1.6rem;
+    background: #ffffff;
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+.form h1::after{
+    content: '';
+    display: block;
+    border: 3px solid red;
+    width: 100%;
+}
+.form-wrapper .form label{
+    display: block;
+}
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form label::after{
+    content: '* ';
+    color: #e63946;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+.form-wrapper .form .smt-btn{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    padding: 0.5em 3em;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ########################## Media queries ######################### */
+
+@media (max-width: 801px){
+    html{
+        /* font-size: 8px; */
+        font-size: 50%;
+    }
+    .navbar .navitems, .navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box, .row .text-box{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 0px 10px 0px #000000;
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .features .box2,.features .box3{
+        margin-top: 7rem;
+    }
+}
+
+@media(min-width: 500px) and (max-width: 1200px){
+    html{
+        /* font-size: 8px; */
+        font-size: 50%;
+    }
+    .navbar .navitems, .navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box, .row .text-box{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 0px 10px 0px #000000;
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .features .box2,.features .box3{
+        margin-top: 7rem;
+    }
+}
+
+@media(orientation: landscape) and (max-height: 500px){
+    .header{
+        height: 90vmax;
+    }
+}
